@@ -10,3 +10,10 @@ Stacking series are rendered in such a way that all the series are stacked. This
 **After Grouping the series**
 
 ![After.png](https://support.syncfusion.com/kb/agent/attachment/article/14906/inline?token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjE2ODQ4Iiwib3JnaWQiOiIzIiwiaXNzIjoic3VwcG9ydC5zeW5jZnVzaW9uLmNvbSJ9.D7L-K9Bt8oXeGXo-1LaOD9l3I6MHtfQ5zHKA-Y96vrY)
+
+**Troubleshooting**
+*Path too long exception*
+
+If you are facing a path too long exception when building this example project, close Visual Studio and rename the repository to short and build the project.
+
+For more details, refer to the KB on how to group stacking series in .NET MAUI Cartesian chart.
