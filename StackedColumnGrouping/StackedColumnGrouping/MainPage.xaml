@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:chart="clr-namespace:Syncfusion.Maui.Charts;assembly=Syncfusion.Maui.Charts"
+             xmlns:local="clr-namespace:StackedColumnGrouping"
+             x:Class="StackedColumnGrouping.MainPage">
+    <ContentPage.BindingContext>
+        <local:ViewModel></local:ViewModel>
+    </ContentPage.BindingContext>
+
+    <chart:SfCartesianChart >
+        <chart:SfCartesianChart.XAxes>
+            <chart:CategoryAxis ShowMajorGridLines="False"></chart:CategoryAxis>
+        </chart:SfCartesianChart.XAxes>
+
+        <chart:SfCartesianChart.YAxes>
+            <chart:NumericalAxis Interval="10" ShowMajorGridLines="False"></chart:NumericalAxis>
+        </chart:SfCartesianChart.YAxes>
+
+        <chart:StackingColumnSeries ItemsSource="{Binding GoogleDrive}"
+                                    XBindingPath="Month"
+                                    YBindingPath="Value"
+                                    Fill="#008FFB"
+                                    Label="Google Drive"
+                                    GroupingLabel="Google"
+                                    LegendIcon="Rectangle">
+        </chart:StackingColumnSeries>
+        
+        <chart:StackingColumnSeries ItemsSource="{Binding GoogleMeet}"
+                                    XBindingPath="Month"
+                                    YBindingPath="Value"
+                                    Fill="#40ACFF"
+                                    Label="Google Meet"
+                                    GroupingLabel="Google"
+                                    LegendIcon="Rectangle">
+        </chart:StackingColumnSeries>
+        
+        <chart:StackingColumnSeries ItemsSource="{Binding OneDrive}"
+                                    XBindingPath="Month"
+                                    YBindingPath="Value"
+                                    Fill="#E3465D"
+                                    Label="One Drive"
+                                    GroupingLabel="MIcrosoft"
+                                    LegendIcon="Rectangle">
+        </chart:StackingColumnSeries>
+
+        <chart:StackingColumnSeries ItemsSource="{Binding Teams}"
+                                    XBindingPath="Month"
+                                    YBindingPath="Value"
+                                    Label="Teams"
+                                    Fill="#F25D72"
+                                    GroupingLabel="MIcrosoft"
+                                    LegendIcon="Rectangle">
+        </chart:StackingColumnSeries>
+
+        <chart:SfCartesianChart.Legend>
+            <chart:ChartLegend ></chart:ChartLegend>
+        </chart:SfCartesianChart.Legend>
+    </chart:SfCartesianChart>
+
+</ContentPage>
