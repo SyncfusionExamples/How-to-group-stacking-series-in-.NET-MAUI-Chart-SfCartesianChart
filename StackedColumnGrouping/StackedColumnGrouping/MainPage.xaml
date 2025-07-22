@@ -8,7 +8,7 @@
         <local:ViewModel></local:ViewModel>
     </ContentPage.BindingContext>
 
-    <chart:SfCartesianChart >
+    <chart:SfCartesianChart Margin="20">
         <chart:SfCartesianChart.XAxes>
             <chart:CategoryAxis ShowMajorGridLines="False"></chart:CategoryAxis>
         </chart:SfCartesianChart.XAxes>
