@@ -1,13 +1,10 @@
-﻿using Syncfusion.Maui.Charts;
-
-namespace StackedColumnGrouping
+﻿namespace StackedColumnGrouping
 {
     public partial class MainPage : ContentPage
     {
         public MainPage()
         {
             InitializeComponent();
-
         }
     }
 }
