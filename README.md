@@ -2,9 +2,9 @@
 
 This article explains how to group the stacking series in [.NET MAUI Cartesian Chart](https://www.syncfusion.com/maui-controls/maui-cartesian-charts)
 
-A stacked chart is a type of graph that displays multiple data series on top of one another, allowing you to see the total and individual contributions of each series to the whole. The .NET MAUI Cartesian Chart provide support to cluster the stacking series using the [GroupingLabel](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.StackingSeriesBase.html#Syncfusion_Maui_Charts_StackingSeriesBase_GroupingLabel) property.
+A stacked chart is a type of graph that displays multiple data series on top of one another, allowing you to see the total and individual contributions of each series to the whole. The .NET MAUI Cartesian Chart provide support to cluster the stacking series using the [GroupingLabel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingSeriesBase.html#Syncfusion_Maui_Toolkit_Charts_StackingSeriesBase_GroupingLabel) property.
 
-Consider a scenario with four stacking column series grouped into two entities, namely **GroupOne** and **GroupTwo**, distinguished by the  [GroupingLabel](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.StackingSeriesBase.html#Syncfusion_Maui_Charts_StackingSeriesBase_GroupingLabel) property. In the resulting chart, two stacking columns are rendered at a specific point— one representing **GroupOne** and the other representing **GroupTwo**. Specifically, **TeamA** and **TeamB** are associated with **GroupOne**, while **TeamC** and **TeamD** are affiliated with **GroupTwo**.
+Consider a scenario with four stacking column series grouped into two entities, namely **GroupOne** and **GroupTwo**, distinguished by the  [GroupingLabel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingSeriesBase.html#Syncfusion_Maui_Toolkit_Charts_StackingSeriesBase_GroupingLabel) property. In the resulting chart, two stacking columns are rendered at a specific point— one representing **GroupOne** and the other representing **GroupTwo**. Specifically, **TeamA** and **TeamB** are associated with **GroupOne**, while **TeamC** and **TeamD** are affiliated with **GroupTwo**.
 
 
 **XAML**
