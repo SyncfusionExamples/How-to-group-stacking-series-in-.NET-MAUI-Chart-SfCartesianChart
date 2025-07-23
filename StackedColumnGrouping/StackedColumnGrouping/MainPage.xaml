@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:chart="clr-namespace:Syncfusion.Maui.Toolkit.Charts;assembly=Syncfusion.Maui.Toolkit"
+             xmlns:local="clr-namespace:StackedColumnGrouping"
+             x:Class="StackedColumnGrouping.MainPage">
+    <ContentPage.BindingContext>
+        <local:ViewModel></local:ViewModel>
+    </ContentPage.BindingContext>
+
+    <chart:SfCartesianChart Margin="20">
+        <chart:SfCartesianChart.XAxes>
+            <chart:CategoryAxis ShowMajorGridLines="False"></chart:CategoryAxis>
+        </chart:SfCartesianChart.XAxes>
+
+        <chart:SfCartesianChart.YAxes>
+            <chart:NumericalAxis Interval="10" ShowMajorGridLines="False"></chart:NumericalAxis>
+        </chart:SfCartesianChart.YAxes>
+
+        <chart:StackingColumnSeries ItemsSource="{Binding Data1}"
+                                    XBindingPath="Month"
+                                    YBindingPath="Value"
+                                    Fill="#008FFB"
+                                    Label="Team A"
+                                    GroupingLabel="GroupOne"
+                                    LegendIcon="Rectangle">
+        </chart:StackingColumnSeries>
+        
+        <chart:StackingColumnSeries ItemsSource="{Binding Data2}"
+                                    XBindingPath="Month"
+                                    YBindingPath="Value"
+                                    Fill="#40ACFF"
+                                    Label="Team B"
+                                    GroupingLabel="GroupOne"
+                                    LegendIcon="Rectangle">
+        </chart:StackingColumnSeries>
+        
+        <chart:StackingColumnSeries ItemsSource="{Binding Data3}"
+                                    XBindingPath="Month"
+                                    YBindingPath="Value"
+                                    Fill="#E3465D"
+                                    Label="Team C"
+                                    GroupingLabel="GroupTwo"
+                                    LegendIcon="Rectangle">
+        </chart:StackingColumnSeries>
+
+        <chart:StackingColumnSeries ItemsSource="{Binding Data4}"
+                                    XBindingPath="Month"
+                                    YBindingPath="Value"
+                                    Label="Team D"
+                                    Fill="#F25D72"
+                                    GroupingLabel="GroupTwo"
+                                    LegendIcon="Rectangle">
+        </chart:StackingColumnSeries>
+
+        <chart:SfCartesianChart.Legend>
+            <chart:ChartLegend ></chart:ChartLegend>
+        </chart:SfCartesianChart.Legend>
+    </chart:SfCartesianChart>
+
+</ContentPage>
