@@ -105,3 +105,9 @@ Consider a scenario with four stacking column series grouped into two entities, 
 **After Grouping the series**
 
 ![After.png](https://support.syncfusion.com/kb/agent/attachment/article/14906/inline?token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjE3Mjg2Iiwib3JnaWQiOiIzIiwiaXNzIjoic3VwcG9ydC5zeW5jZnVzaW9uLmNvbSJ9._IlGUeutt5mOugHIfa8Rke-BiIgwJ6yRrwR0r27ZNs4)
+
+### Troubleshooting
+**Path too long exception**
+If you are facing a path too long exception when building this example project, close Visual Studio and rename the repository to a shorter name before building the project.
+
+For more details, refer to the KB on [how to group stacking series in .NET MAUI SfCartesianChart](https://support.syncfusion.com/kb/article/14906/how-to-group-stacking-series-in-net-maui-chart-sfcartesianchart-).
