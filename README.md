@@ -6,6 +6,18 @@ A stacked chart is a type of graph that displays multiple data series on top of 
 
 Consider a scenario with four stacking column series grouped into two entities, namely **GroupOne** and **GroupTwo**, distinguished by the  [GroupingLabel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingSeriesBase.html#Syncfusion_Maui_Toolkit_Charts_StackingSeriesBase_GroupingLabel) property. In the resulting chart, two stacking columns are rendered at a specific point— one representing **GroupOne** and the other representing **GroupTwo**. Specifically, **TeamA** and **TeamB** are associated with **GroupOne**, while **TeamC** and **TeamD** are affiliated with **GroupTwo**.
 
+## Overview
+
+In Syncfusion .NET MAUI Charts, the SfCartesianChart control supports grouped stacking for series such as StackingColumnSeries, StackingBarSeries, and StackingAreaSeries. Grouped stacking allows multiple series to be stacked independently within the same chart, enabling comparative analysis across different categories or groups.
+
+## Use Cases
+
+- Comparative Analysis: Compare multiple categories side-by-side while maintaining stacked values within each group.
+- Sales by Region and Product: Group series by region and stack product sales within each region.
+- Budget vs Actual: Stack budgeted and actual values separately for different departments.
+- Multi-Year Data: Group series by year and stack monthly data within each year.
+- Segmented Performance: Visualize performance metrics grouped by teams or business units.
+
 
 **XAML**
  
